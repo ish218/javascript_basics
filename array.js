@@ -49,3 +49,25 @@ dc.push(marvel);
 console.log(marvel);
 console.log(dc);
 
+//We can also use concat() to join the two arrays. Concat() always returns a new array.
+const mergeArray = marvel.concat(dc);
+console.log(mergeArray);
+console.log(marvel[3][2]); //  marvel array's third element's index 2 element i.e. aquaman
+
+//We can also usofe SPREAD(...) in place of concat(), which spreads the values of all the arrays and returns them all.
+const spreadArray = [...marvel, ...dc];
+console.log(spreadArray);
+
+// Changing any data type (object, string etc) to ARRAY Using the From() method.
+const str = "Ishan";
+console.log(Array.from(str));
+
+console.log(Array.from({name:"Ishan"})); //returns an empty set, we'll need to specify whether key or value has to array.
+
+// Array.of() --> this method is also used to convert the set of elements to an array.
+let a=100;
+let b=1000;
+let c="bubu";
+
+console.log(Array.of(a,b,c));
+
