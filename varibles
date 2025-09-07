@@ -1,0 +1,11 @@
+const accountNum = 123432
+let city = "Patna"
+var emailId = "abc@gmail.com"
+let name = "Ishan"
+
+console.log(accountNum)
+name = "Rahul"
+console.table([city, emailId, name])  // Use Table to print multiple variables in a single line
+
+/* PREFER NOT TO USE VAR
+because of issues with functional scope and block scope */
